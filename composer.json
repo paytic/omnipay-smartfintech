@@ -1,0 +1,49 @@
+{
+  "name": "paytic/omnipay-smartfintech",
+  "type": "library",
+  "license": "MIT",
+  "description": "omnipay driver for smartfintech.eu",
+  "keywords": [
+    "smartfintech",
+    "driver",
+    "gateway",
+    "merchant",
+    "pay",
+    "payment"
+  ],
+  "homepage": "https://github.com/paytic/omnipay-smartfintech",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Paytic\\Omnipay\\Smartfintech\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Paytic\\Omnipay\\Smartfintech\\Tests\\": "tests/src",
+      "Paytic\\Omnipay\\Smartfintech\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "paytic/smartfintech": "dev-main",
+    "paytic/omnipay-common": "^3.0"
+  },
+  "require-dev": {
+    "bytic/phpqatools": "^1.0",
+    "omnipay/tests": "^3|^4",
+    "vlucas/phpdotenv": "^2.3",
+    "symfony/http-client": "^5.0|^6.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
